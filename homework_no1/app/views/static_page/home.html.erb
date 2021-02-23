@@ -1,0 +1,16 @@
+<h1>Your location based on your IP :</h1>
+<p>Latitude: <%= @location[:lat]%></p>
+<p>Longitude: <%= @location[:lon]%></p>
+<p>Country: <%= @location[:country]%></p>
+<p>City: <%= @location[:city]%></p>
+<br>
+<h1>Weather is:</h1>
+<p><% description = @weather[:weather]%></p>
+<p>Description: <%= description["description"]%></p>
+<p>Temperature: <%= @weather[:temperature]%></p>
+<p>Precipitation: <%= @weather[:precipitation]%></p>
+<p>Wind speed: <%= @weather[:wind_speed]%></p>
+<p>Wind direction: <%= @weather[:wind_direction]%></p>
+<br>
+<h2>Random advice for today:</h2>
+<p><%= @advice%></p>

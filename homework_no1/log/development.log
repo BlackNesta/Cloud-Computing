@@ -1,0 +1,7 @@
+Started GET "/" for ::1 at 2021-02-23 15:57:30 +0200
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2686ms (Views: 384.5ms)
+
+
