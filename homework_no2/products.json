@@ -1,0 +1,47 @@
+[
+    {
+        "id": "2",
+        "name": "Cappuccino",
+        "price": 7
+    },
+    {
+        "id": "3",
+        "name": "Frapper",
+        "price": 10
+    },
+    {
+        "id": "4",
+        "name": "Hot Tea",
+        "price": 12
+    },
+    {
+        "id": "5",
+        "name": "Fresh Orange Juice",
+        "price": 15
+    },
+    {
+        "id": "8ac5081d-437e-419e-9c67-7e383f1f9ea9",
+        "name": "Test",
+        "price": 15
+    },
+    {
+        "id": "bfecdab3-4f06-4227-b9b2-2f2a4ee3f4d5",
+        "name": "Latte",
+        "price": 15
+    },
+    {
+        "id": "1c8848c1-b78c-4f65-bfee-e9ebc6384389",
+        "name": "Updated Coffee",
+        "price": 20
+    },
+    {
+        "id": "699444d2-a3c3-479e-a690-7b98b33e201b",
+        "name": "Irish",
+        "price": 20
+    },
+    {
+        "id": "ab3f6d47-2375-4a05-b4b9-3c30c96d5b1b",
+        "name": "turkis",
+        "price": 20
+    }
+]
