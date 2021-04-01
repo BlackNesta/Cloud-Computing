@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var bodyParser = require('body-parser');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -37,5 +37,16 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const fetch = require("node-fetch")
+app.post("/index/:captcharesp"), async(req, res) =>
+{
+  const captchaVerified = await fetch('https://google.com/recaptcha/api/siteverify?secret=6LcBwZMaAAAAAKjWRF2sFdqpA08XnWZCfvujdK_J&response=${req.params.captcharesponse}', {
+    method : "POST"
+  })
+      .then(_res => _res.json())
+  if(captchaVerified.success ===true)
+    return res.json({"succes":true, "msg":"you re not a robot"});
+}
 
 module.exports = app;

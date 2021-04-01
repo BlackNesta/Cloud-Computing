@@ -3,3 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div
+    form#newform
+      .form-group
+        .g-recaptcha(data-sitekey='6LcBwZMaAAAAAKjWRF2sFdqpA08XnWZCfvujdK_J')
+      input.btn.btn-primary(type='submit' value='Submit')
+script.
+  document.getElementById("newform").onsubmit = function (e) {
+    e.preventDefault()
+    var formData = new FormData(document.getElementById("newform"))
+    var captchaResp = formData.get("g-recaptcha-response")
+    fetch(encodeURI(captchaResp), {method: `POST`})
+          .then(() => location.reload())
+    console.log(captchaResp)
+  }
